@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Trung_Banner::banner_manager" title="Banner Manager" module="Trung_Banner"  resource="Trung_Banner::banner_manager"/>
+        <add id="Trung_Banner::list_banner" title="List Banners" module="Trung_Banner" action="banner" resource="Trung_Banner::banner_manager" parent="Trung_Banner::banner_manager"/>
+        <add id="Trung_Banner::new_banner" title="New Banner" module="Trung_Banner" action="banner/index/new" resource="Trung_Banner::save" parent="Trung_Banner::banner_manager"/>
+    </menu>
+</config>
